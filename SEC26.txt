@@ -142,11 +142,11 @@ ping 11.11.11.113
 ### 1. Get the MAC Address for the Bridge connection
 VMWare > NetOps-PH Settings > NetAdapter (2, 3, & 4) > Advance > MAC Address
 
-| NetAdapter   | MAC Address      | VM Interface |           |
-| ---          | ---              | ---          | ---       |
-| NetAdapter 2 | ___.___.___.___  | ens___       |  ens192   |
-| NetAdapter 3 | ___.___.___.___  | ens___       |  ens224   |
-| NetAdapter 4 | ___.___.___.___  | ens___       |  ens256   |
+| NetAdapter   | MAC Address       | VM Interface | 
+| NetAdapter 1 | 00:0C:29:C7:F3:6E | ens160       | 
+| NetAdapter 2 | 00:0C:29:C7:F3:78 | ens224       |  
+| NetAdapter 3 | 00:0C:29:C7:F3:82 | ens256       |  
+| NetAdapter 4 | 00:0C:29:C7:F3:8C | ens161       |  
 
 
 <br>
@@ -170,9 +170,9 @@ Bridged: 10.52.1.6/24
 
 ~~~
 !@NetOps-PH
-ifconfig ens192 192.168.102.6 netmask 255.255.255.0 up
-ifconfig ens224 11.11.11.100 netmask 255.255.255.224 up
-ifconfig ens256 10.52.1.6 netmask 255.255.255.0 up
+ifconfig ens224 192.168.102.6 netmask 255.255.255.0 up
+ifconfig ens256 11.11.11.100 netmask 255.255.255.224 up
+ifconfig ens161 10.52.1.6 netmask 255.255.255.0 up
 ~~~
 
 or 
