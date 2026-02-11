@@ -26,11 +26,11 @@
 
 ### Review
 __Jobs of a firewall__
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Traffic Filtering (ACLs, Policy Based Rules)
+2. Transport Security (VPN, DMVPN, ZTNA)
+3. Threat Prevention (NGFW, IPS, Proxy)
+4. Network Segmentation/Isolation (INSIDE, OUTSIDE, DMZ)
+5. Monitoring, Logging, and Alerts
 
 
 <br>
@@ -660,14 +660,14 @@ Review on Ports:
 
 | Port   | No.  | Port   | No.   |
 | ---    | ---  | ---    | ---   |
-| Telnet |      | SMTPS  |       |
-| SSH    |      | IMAPS  |       |
-| DNS    |      | POP3S  |       |
-| HTTP   |      | MYSQL  |       |
-| HTTPS  |      | SCCP   |       |
-| SMTP   |      | SIP    |       |
-| IMAP   |      | FTP    |       |
-| POP3   |      | TFTP   |       |
+| Telnet | 23   | SMTPS  | 465   |
+| SSH    | 22   | IMAPS  | 993   |
+| DNS    | 53   | POP3S  | 995   |
+| HTTP   | 80   | MYSQL  | 3306  |
+| HTTPS  | 443  | SCCP   | 2000  |
+| SMTP   | 25   | SIP    | 5060  |
+| IMAP   | 143  | FTP    | 20/21 |
+| POP3   | 110  | TFTP   | 69    |
 
 <br>
 
